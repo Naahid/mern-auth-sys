@@ -21,6 +21,7 @@ mongoose.connection.once('open', () => {
     console.log('MongoDB database connected successfully');
 })
 
+app.use('/users', require('./routers/users'))
 
 
 
